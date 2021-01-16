@@ -1,0 +1,15 @@
+@import '../base/variables.scss';
+.container{
+    width: 100%;
+    display: grid;
+    padding: 0 px(16);
+    margin-right: auto;
+    margin-left: auto;
+    @media($media-1340){
+        max-width: px(1340);
+    }
+    &-fluid{
+        width: 100%;
+        display: grid;
+    }
+}

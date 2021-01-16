@@ -7,7 +7,7 @@ const Home = (props) => {
       <Head>
         <title>Lucas Delgado</title>
       </Head>
-      <div>
+      <div className="container">
         Pagina
       </div>
     </section>
