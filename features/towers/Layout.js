@@ -5,15 +5,16 @@ import Header from './Header';
 
 
 
-const Layout = ({children}) => {
+const Layout = (props) => {
+    let {children, className} = props;
     return (
-        <div>
+        <div className={className}>
             <Head></Head>
-            <Header/>
+            
             <main>
                 {children}
             </main>
-            <Footer/>
+
         </div>
     );
 }

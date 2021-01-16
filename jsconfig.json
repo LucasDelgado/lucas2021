@@ -4,7 +4,8 @@
       "paths": {
         "@components/*": ["features/components/*"],
         "@modules/*": ["features/modules/*"],
-        "@towers/*": ["features/towers/*"]
+        "@towers/*": ["features/towers/*"],
+        "@helpers/*": ["features/helpers/*"]
       }
     }
   }

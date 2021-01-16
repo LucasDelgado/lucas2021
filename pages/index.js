@@ -5,10 +5,12 @@ const Home = (props) => {
   return ( 
     <section className="home">
       <Head>
-        <title>Home</title>
+        <title>Lucas Delgado</title>
       </Head>
       <div>
-        hola soy la home
+        Pagina en Construccion. <br/>
+        Ya falta poco para el nuevo sitio. Igual va a ser Tranki, no flashees. <br/>
+        Contacto:  <a href="mailto:lucas.matias.delgado@gmail.com">lucas.matias.delgado@gmail.com</a>
       </div>
     </section>
   );
