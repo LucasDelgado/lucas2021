@@ -8,9 +8,7 @@ const Home = (props) => {
         <title>Lucas Delgado</title>
       </Head>
       <div>
-        Pagina en Construccion. <br/>
-        Ya falta poco para el nuevo sitio. Igual va a ser Tranki, no flashees. <br/>
-        Contacto:  <a href="mailto:lucas.matias.delgado@gmail.com">lucas.matias.delgado@gmail.com</a>
+        Pagina
       </div>
     </section>
   );

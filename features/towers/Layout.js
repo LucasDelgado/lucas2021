@@ -10,11 +10,11 @@ const Layout = (props) => {
     return (
         <div className={className}>
             <Head></Head>
-            
+            <Header/>
             <main>
                 {children}
             </main>
-
+            <Footer/>
         </div>
     );
 }
