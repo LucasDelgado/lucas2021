@@ -5,7 +5,10 @@
         "@components/*": ["features/components/*"],
         "@modules/*": ["features/modules/*"],
         "@towers/*": ["features/towers/*"],
-        "@helpers/*": ["features/helpers/*"]
+        "@helpers/*": ["features/helpers/*"],
+        "@componentsStyle/*": ["styles/components/*"],
+        "@modulesStyle/*": ["styles/modules/*"],
+        "@towersStyle/*": ["styles/towers/*"],
       }
     }
   }

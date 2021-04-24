@@ -1,12 +1,14 @@
 import React from 'react';
-import Head from 'next/head'
+import siteConfig from '../siteConfig'
 
 const Home = (props) => {
+
   return ( 
     <section className="home">
-      <div className="container">
-        Pagina
-      </div>
+      <h1 className="home__title" >
+        LucasDelgado <br/> 
+        <span>{siteConfig.rol}</span>  
+      </h1>
     </section>
   );
 }

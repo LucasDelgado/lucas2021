@@ -1,4 +1,3 @@
-@import './variables.scss';
 html,
 body,
 div,
@@ -142,7 +141,49 @@ button {
   outline: none;
 }
 
-body {
-  font-family: Arial, "sans-serif";
+html{
+  font-family: 'Roboto Mono';
+  font-size: 100%;
+  color:var(--light-neutral-900);
+}
+body{
+  background-color:var(--light-neutral-50);;
 }
 
+/*VARIABLES ROOT*/
+:root {
+
+  --light-blue-500: #0074C4;
+  --light-blue-700: #00547A;
+
+  --light-neutral-50: #ebebeb;
+  --light-neutral-400: #CCCCCC;
+  --light-neutral-500: #919191;
+  --light-neutral-600: #5A5A5A;
+  --light-neutral-700: #333333;
+  --light-neutral-800: #272727;
+  --light-neutral-900: #1C1C1F;
+
+  --red-700: #B40D15;
+  --red-800: #6C0801;
+  --red-900: #4A0500;
+
+  --violet-500: #1417CF;
+  --violet-700: #00027D;
+
+  --teal-600: #15AFAF;
+  --teal-700: #0C8485;
+
+  --green-500: #71CD6D;
+  --green-800: #22B120;
+
+
+  //=======================================
+  // Box Shadows
+  //=======================================
+  $shadow-down-xs: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  $shadow-down-md: 0px 12px 24px rgba(0, 0, 0, 0.04);
+
+  $shadow-up-xs: 0px -4px 8px rgba(0, 0, 0, 0.08);
+  $shadow-up-md: 0px -12px 24px rgba(0, 0, 0, 0.04);
+}
