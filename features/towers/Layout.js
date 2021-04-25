@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
 
-import Footer from './Footer';
 import Header from './Header';
 import site from '../../siteConfig.json'
 import ButtonWapp from '@components/buttonWapp';
@@ -35,7 +34,6 @@ const Layout = (props) => {
             <main itemScope itemType="http://schema.org/LocalBusiness">
                 {children}
             </main>
-            <Footer/>
             
             <ButtonWapp/>
 

@@ -15,10 +15,12 @@ main{
 
 /*HOME*/
 .home{
+    margin-bottom: 100px;
     &__title{
         font-size: 2.5rem;
         font-weight: 600;
         margin-top: 100px;
+        margin-bottom: 40px;
         @media (min-width: 414px) {
             font-size: 3rem;
         }
@@ -28,5 +30,40 @@ main{
             font-size: 1.1rem;
             color:var(--light-neutral-600);
         }
+    }
+    &__descripPrincipal{
+        font-style: italic;
+        padding-left: 20px;
+    }
+}
+
+
+
+//TITLE
+.title{
+    h2{
+        font-size: 1.6rem;
+        display: inline-block;
+        color: var(--light-neutral-800);
+        border-bottom: 1px solid var(--light-neutral-500);
+        font-weight: 700;
+        margin-bottom: 56px;
+    }
+}
+
+//CARD
+.card{
+    padding: 16px;
+    border: 1px solid var(--light-neutral-800);
+    margin-bottom: 32px;
+    h5{
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    p:last-child{
+        text-align: right;
+        color: var(--light-neutral-500);
     }
 }

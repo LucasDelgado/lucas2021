@@ -141,6 +141,10 @@ button {
   outline: none;
 }
 
+strong{
+  font-weight: 900;
+}
+
 html{
   font-family: 'Roboto Mono';
   font-size: 100%;
@@ -156,7 +160,7 @@ body{
   --light-blue-500: #0074C4;
   --light-blue-700: #00547A;
 
-  --light-neutral-50: #ebebeb;
+  --light-neutral-50: #f9f9f9;
   --light-neutral-400: #CCCCCC;
   --light-neutral-500: #919191;
   --light-neutral-600: #5A5A5A;
