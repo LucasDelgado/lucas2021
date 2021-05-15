@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from './Header';
 import site from '../../siteConfig.json'
 import ButtonWapp from '@components/buttonWapp';
+import Footer from './Footer';
 
 
 
@@ -28,12 +29,25 @@ const Layout = (props) => {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet"/>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71028793-1"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                    __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-71028793-1');
+                `,
+                    }}
+                />
             </Head>
             
             <Header/>
             <main itemScope itemType="http://schema.org/LocalBusiness">
                 {children}
             </main>
+            <Footer/>
             
             <ButtonWapp/>
 
