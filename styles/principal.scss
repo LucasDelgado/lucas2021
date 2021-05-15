@@ -24,11 +24,6 @@
     }
 }
 
-/*MAIN*/
-main{
-
-}
-
 /*HOME*/
 .home{
     margin-bottom: 100px;
@@ -49,9 +44,19 @@ main{
     &__descripPrincipal{
         font-style: italic;
         padding-left: 20px;
+        p{
+            margin-bottom: 16px;
+            strong{
+                display: block;            
+                margin-top: 4px;
+            }
+        }
     }
 }
 
+.skills{
+    margin-bottom: 50px;
+}
 
 
 /*header*/
@@ -90,7 +95,7 @@ main{
         color: var(--light-neutral-800);
         border-bottom: 1px solid var(--light-neutral-500);
         font-weight: 700;
-        margin-bottom: 56px;
+        margin-bottom: 40px;
     }
 }
 

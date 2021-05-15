@@ -13,9 +13,17 @@ const Home = (props) => {
           <span>{siteConfig.rol}</span>  
         </h1>
         <article className="home__descripPrincipal">
-          Trabajo como desarrollador Web FrontEnd, actualmente en: <br></br> <strong> DIARIO LA NACION.</strong> <br/><br/>
-          Con conocimientos solidos en: <strong>REACT.JS, HTML, CSS, JS, SASS, JAVA, SEO, UX, RESPONSIVE.</strong> <br/><br/>
-          Me encuentro cursando el 2do año de la carrera: <br/> <strong>Analista de Sistemas en la ORT.</strong> 
+          <p>Trabajo como desarrollador Web FrontEnd, actualmente en:
+            <strong> DIARIO LA NACION.</strong>
+          </p>
+          <p>
+            Con conocimientos solidos en: 
+            <strong>REACT.JS, HTML5, CSS3, JS, SASS, JAVA, SEO, UX, RESPONSIVE.</strong>
+          </p>
+          <p>
+            Me encuentro cursando el 2do año de la carrera:
+            <strong>Analista de Sistemas en la ORT.</strong> 
+          </p>
         </article>
       </section>
       <section className="skills">

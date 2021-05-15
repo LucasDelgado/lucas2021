@@ -13,7 +13,7 @@ const Footer = () => {
 
     return ( 
         <footer className="footer">
-            <p>Copypright {_getYear()}</p>
+            <p>Copyright {_getYear()}</p>
         </footer> 
     );
 }
