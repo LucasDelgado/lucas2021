@@ -1,13 +1,40 @@
 import Card from '@components/Card';
 import Title from '@components/Title';
-import React from 'react';
+import ReactMarkdown from 'react-markdown'
+
+import React, { useEffect, useState } from 'react';
 import siteConfig from '../siteConfig'
 
 const Home = (props) => {
+  //==========API==============
+  const [dataBlogs, setDataBlogs] = useState(null);
+  useEffect( ()=>{
+
+    async function getBlogs(){
+      try{
+        const response = await fetch('https://cmslucas.herokuapp.com/blogs');
+        console.log(response);
+        const data = await response.json();
+        if(data.statusCode == 200){
+          setDataBlogs(data);   
+          console.log("sdasdas" +data);       
+        }
+       
+      }catch(error){
+        
+      }
+    }
+
+    getBlogs();
+    
+  }, [])
+  let dataIsEmpty = dataBlogs == null;
+
+  //===========================
 
   return (
-    <div className="container"> 
-      <section className="home">
+    <div className="container">   
+      <section className="home --mb-56">
         <h1 className="home__title" >
           Lucas Delgado <br/> 
           <span>{siteConfig.rol}</span>  
@@ -26,7 +53,8 @@ const Home = (props) => {
           </p>
         </article>
       </section>
-      <section className="skills">
+
+      <section className="skills --mb-56">
         <Title
           title="Cursos certificados"/> 
         <div className="grid grid-1-mobile">
@@ -47,10 +75,25 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className="blog">
+      <section className="blog --mb-56">
         <Title
           title="Blog"/> 
-          <p>Proximamente....</p>
+          { dataIsEmpty ?
+            <div>Cargando....</div>
+            : 
+            <article>
+              <h2>{data[0].title}</h2>
+              <ReactMarkdown  components={{p: ({node, ...props}) => <p className="text" {...props} />, img:({node, ...props}) => <img src={`https://cmslucas.herokuapp.com${props.src}`} /> }}>
+                {data[0].articulo}
+              </ReactMarkdown>
+            </article>
+          }
+
+      </section>
+
+      <section className="contact --mb-56">
+        <Title
+          title="Contacto"/> 
       </section>
     </div>
   );
